@@ -524,6 +524,45 @@ fieldset {
   background: #fffaf0;
 }
 
+
+.jobber-form-wrapper {
+  overflow: visible;
+}
+
+.jobber-embed {
+  width: 100%;
+  min-height: 700px;
+}
+
+.jobber-embed iframe {
+  display: block;
+  width: 100%;
+  min-height: 700px;
+  border: 0;
+}
+
+.jobber-placeholder {
+  display: grid;
+  min-height: 420px;
+  place-content: center;
+  padding: 32px;
+  text-align: center;
+  color: var(--muted);
+  background: var(--cream);
+  border: 2px dashed var(--line);
+  border-radius: 12px;
+}
+
+.jobber-placeholder h3 {
+  margin: 0 0 8px;
+  color: var(--ink);
+}
+
+.jobber-placeholder p {
+  max-width: 520px;
+  margin: 0;
+}
+
 @media (max-width: 900px) {
   .menu-button { display: block; }
 

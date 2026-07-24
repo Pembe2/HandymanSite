@@ -6,7 +6,6 @@ This package contains a responsive two-page website:
 - `quote.html` — detailed quote request form
 - `styles.css` — all visual styling
 - `site.js` — mobile navigation and copyright year
-- `quote.js` — validates the quote form and drafts a structured email
 
 ## First changes to make
 
@@ -21,14 +20,18 @@ This package contains a responsive two-page website:
 
 ## How the quote form works
 
-The form uses a `mailto:` link. When the customer presses **Draft My Quote Email**:
+The quote page is prepared for a Jobber request-form embed.
 
-1. The browser opens the customer’s default email application.
-2. The recipient, subject, and organized message body are filled in.
-3. The customer reviews the email, attaches photos if desired, and sends it.
+In `quote.html`, find the `JOBBER SETUP` comment and replace the placeholder
+with the complete embed code copied from your Jobber account.
 
-This approach requires no hosting backend, but it depends on the customer having
-an email application configured.
+Jobber navigation:
+
+`Settings > Requests and Bookings > Share Links > Copy Code`
+
+Once installed, customer submissions go directly into Jobber instead of
+opening the customer's email application.
+
 
 ## Recommended production upgrade
 
