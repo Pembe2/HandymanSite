@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Request a handyman service quote." />
+  <title>Request a Quote | Reliable Handyman Co.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">RH</span>
+        <span>
+          <strong>Reliable Handyman Co.</strong>
+          <small>Repairs • Maintenance • Improvements</small>
+        </span>
+      </a>
+
+      <button class="menu-button" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a class="active" href="quote.html">Request a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="quote-main">
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="eyebrow">Project request</p>
+        <h1>Tell me about the work you need done.</h1>
+        <p>
+          Complete the form below. When you submit it, your email application will open
+          with a professionally formatted request ready to send.
+        </p>
+      </div>
+    </section>
+
+    <section class="section quote-section">
+      <div class="container quote-layout">
+        <form id="quoteForm" class="quote-form">
+          <div class="form-section">
+            <div class="form-section-heading">
+              <span>1</span>
+              <div>
+                <h2>Contact information</h2>
+                <p>How should I reach you?</p>
+              </div>
+            </div>
+
+            <div class="form-grid">
+              <label>
+                Full name *
+                <input type="text" name="fullName" autocomplete="name" required />
+              </label>
+
+              <label>
+                Email *
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+
+              <label>
+                Phone number *
+                <input type="tel" name="phone" autocomplete="tel" required />
+              </label>
+
+              <label>
+                Preferred contact method
+                <select name="contactMethod">
+                  <option>Email</option>
+                  <option>Phone call</option>
+                  <option>Text message</option>
+                </select>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="form-section-heading">
+              <span>2</span>
+              <div>
+                <h2>Project location</h2>
+                <p>Where will the work take place?</p>
+              </div>
+            </div>
+
+            <div class="form-grid">
+              <label class="full-width">
+                Street address *
+                <input type="text" name="street" autocomplete="street-address" required />
+              </label>
+
+              <label>
+                City *
+                <input type="text" name="city" autocomplete="address-level2" required />
+              </label>
+
+              <label>
+                State *
+                <input type="text" name="state" autocomplete="address-level1" value="NH" required />
+              </label>
+
+              <label>
+                ZIP code *
+                <input type="text" name="zip" autocomplete="postal-code" required />
+              </label>
+
+              <label>
+                Property type
+                <select name="propertyType">
+                  <option>Single-family home</option>
+                  <option>Townhouse or condo</option>
+                  <option>Apartment</option>
+                  <option>Rental property</option>
+                  <option>Commercial property</option>
+                  <option>Other</option>
+                </select>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="form-section-heading">
+              <span>3</span>
+              <div>
+                <h2>Project details</h2>
+                <p>Give me enough information to understand the scope.</p>
+              </div>
+            </div>
+
+            <fieldset>
+              <legend>Type of work *</legend>
+              <div class="checkbox-grid">
+                <label><input type="checkbox" name="services" value="Minor electrical" /> Minor electrical</label>
+                <label><input type="checkbox" name="services" value="Minor plumbing" /> Minor plumbing</label>
+                <label><input type="checkbox" name="services" value="Drywall repair" /> Drywall repair</label>
+                <label><input type="checkbox" name="services" value="Painting" /> Painting</label>
+                <label><input type="checkbox" name="services" value="Assembly or installation" /> Assembly or installation</label>
+                <label><input type="checkbox" name="services" value="General maintenance" /> General maintenance</label>
+                <label><input type="checkbox" name="services" value="Rental turnover or punch list" /> Rental turnover / punch list</label>
+                <label><input type="checkbox" name="services" value="Other" /> Other</label>
+              </div>
+            </fieldset>
+
+            <label>
+              Project title *
+              <input type="text" name="projectTitle" placeholder="Example: Repair drywall and repaint bedroom wall" required />
+            </label>
+
+            <label>
+              Describe the project *
+              <textarea name="description" rows="7" placeholder="Describe what is damaged, what you would like completed, approximate dimensions, materials involved, and anything else that may affect the work." required></textarea>
+            </label>
+
+            <div class="form-grid">
+              <label>
+                Number of separate tasks
+                <input type="number" name="taskCount" min="1" value="1" />
+              </label>
+
+              <label>
+                Materials
+                <select name="materials">
+                  <option>Not sure — please advise</option>
+                  <option>I will provide materials</option>
+                  <option>Please include materials</option>
+                  <option>Some materials are already available</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              Photo links
+              <textarea name="photoLinks" rows="3" placeholder="Paste links to Google Photos, iCloud, Dropbox, etc. One link per line."></textarea>
+              <small>This email-based starter cannot attach files automatically. Photo links work reliably.</small>
+            </label>
+          </div>
+
+          <div class="form-section">
+            <div class="form-section-heading">
+              <span>4</span>
+              <div>
+                <h2>Timing and access</h2>
+                <p>When and how can the job be evaluated?</p>
+              </div>
+            </div>
+
+            <div class="form-grid">
+              <label>
+                Desired completion timeframe *
+                <select name="timeframe" required>
+                  <option value="">Select one</option>
+                  <option>As soon as possible</option>
+                  <option>Within one week</option>
+                  <option>Within two weeks</option>
+                  <option>Within one month</option>
+                  <option>Flexible / no deadline</option>
+                  <option>Specific date</option>
+                </select>
+              </label>
+
+              <label>
+                Specific date, if applicable
+                <input type="date" name="specificDate" />
+              </label>
+
+              <label>
+                Best days
+                <input type="text" name="bestDays" placeholder="Example: Monday, Wednesday, or Friday" />
+              </label>
+
+              <label>
+                Best time of day
+                <select name="bestTime">
+                  <option>Flexible</option>
+                  <option>Morning</option>
+                  <option>Afternoon</option>
+                  <option>Evening</option>
+                </select>
+              </label>
+
+              <label>
+                Is someone available onsite?
+                <select name="onsite">
+                  <option>Yes</option>
+                  <option>No — access can be arranged</option>
+                  <option>Not sure yet</option>
+                </select>
+              </label>
+
+              <label>
+                Parking/access notes
+                <input type="text" name="access" placeholder="Gate code, parking, pets, stairs, tenant access, etc." />
+              </label>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="form-section-heading">
+              <span>5</span>
+              <div>
+                <h2>Budget and final notes</h2>
+                <p>Optional information that helps shape the estimate.</p>
+              </div>
+            </div>
+
+            <div class="form-grid">
+              <label>
+                Approximate budget
+                <select name="budget">
+                  <option>Not sure</option>
+                  <option>Under $250</option>
+                  <option>$250–$500</option>
+                  <option>$500–$1,000</option>
+                  <option>$1,000–$2,500</option>
+                  <option>Over $2,500</option>
+                </select>
+              </label>
+
+              <label>
+                How did you hear about me?
+                <select name="referral">
+                  <option>Google search</option>
+                  <option>Facebook or social media</option>
+                  <option>Friend or neighbor</option>
+                  <option>Repeat customer</option>
+                  <option>Property manager or realtor</option>
+                  <option>Other</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              Additional notes
+              <textarea name="notes" rows="4" placeholder="Include any special concerns, previous repair attempts, tenant coordination, pets, or other useful details."></textarea>
+            </label>
+
+            <label class="consent">
+              <input type="checkbox" name="consent" required />
+              <span>I confirm that the information is accurate and understand this request is not a guaranteed estimate or appointment. *</span>
+            </label>
+          </div>
+
+          <div id="formMessage" class="form-message" role="alert" hidden></div>
+
+          <div class="form-actions">
+            <button class="button" type="submit">Draft My Quote Email</button>
+            <button class="button button-secondary" type="reset">Clear Form</button>
+          </div>
+        </form>
+
+        <aside class="quote-sidebar">
+          <div class="sidebar-card">
+            <h3>What happens next?</h3>
+            <ol>
+              <li>Your email app opens with the request already organized.</li>
+              <li>You review the message and add any photo attachments.</li>
+              <li>You press send.</li>
+              <li>I respond with questions, availability, or next steps.</li>
+            </ol>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>For the best estimate</h3>
+            <ul class="check-list">
+              <li>Include measurements when possible</li>
+              <li>Describe the desired finished result</li>
+              <li>Share several clear photos</li>
+              <li>Mention access or parking issues</li>
+              <li>List all jobs in the same visit</li>
+            </ul>
+          </div>
+
+          <div class="sidebar-card warning-card">
+            <h3>Emergency work</h3>
+            <p>
+              Do not use this form for gas leaks, active flooding, electrical arcing,
+              fire hazards, or other emergencies. Contact the appropriate emergency
+              service or licensed trade professional.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Reliable Handyman Co.</span>
+      <a href="index.html">Return to Home</a>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
+  <script src="quote.js"></script>
+</body>
+</html>
