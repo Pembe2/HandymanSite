@@ -21,11 +21,12 @@ a { color:inherit; }
 .narrow { width:min(780px,calc(100% - 40px)); }
 .site-header { position:sticky; top:0; z-index:20; background:rgba(247,249,248,.96); border-bottom:1px solid var(--line); backdrop-filter:blur(10px); }
 .nav-wrap { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:22px; }
-.brand,.footer-brand { display:inline-flex; align-items:center; gap:10px; text-decoration:none; }
+.site-header .brand,.footer-brand { display:inline-flex !important; align-items:center; flex-direction:row; gap:10px; text-decoration:none !important; }
 .brand { flex:0 1 auto; min-width:0; }
-.logo-mark { width:56px; height:56px; display:block; overflow:hidden; flex:0 0 auto; border-radius:2px; }
-.logo-mark img { width:100%; height:100%; display:block; object-fit:cover; transform:scale(1.34); }
+.logo-mark { width:56px; height:56px; display:block; overflow:hidden; flex:0 0 auto; border-radius:2px; background:url("north_beach_compass_waves_logo.png") center / 134% auto no-repeat; }
+.brand > img { width:56px !important; height:56px !important; display:block; object-fit:cover; flex:0 0 auto; }
 .brand-text { display:grid; gap:1px; line-height:1; }
+.brand-text,.brand-text span { text-decoration:none !important; }
 .brand-name { color:var(--slate); font-family:"Libre Baskerville",serif; font-size:1.48rem; font-weight:700; white-space:nowrap; }
 .brand-subtitle { color:var(--seafoam-dark); font-size:.62rem; font-weight:800; letter-spacing:.13em; text-transform:uppercase; white-space:nowrap; }
 .site-nav { display:flex; align-items:center; gap:20px; flex:0 0 auto; }
