@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 90" role="img" aria-labelledby="title desc">
+<title id="title">North Beach Property Services</title>
+<desc id="desc">Compass rose above coastal waves</desc>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="45" cy="38" r="27" stroke="#E6D6B8" stroke-width="2"/>
+  <path d="M45 5 L50 32 L72 38 L50 44 L45 71 L40 44 L18 38 L40 32 Z" fill="#F7F9F8" stroke="#1E3A4A" stroke-width="2"/>
+  <path d="M45 11 L48 35 L45 38 L42 35 Z" fill="#1E3A4A"/>
+  <path d="M45 65 L42 41 L45 38 L48 41 Z" fill="#4CB6B2"/>
+  <path d="M5 68 C18 60 28 76 42 68 S66 60 82 68" stroke="#4CB6B2" stroke-width="5"/>
+  <path d="M8 77 C21 69 31 85 45 77 S69 69 84 77" stroke="#1E3A4A" stroke-width="4"/>
+</g>
+<g font-family="Georgia, 'Times New Roman', serif" fill="#1E3A4A">
+  <text x="98" y="42" font-size="31" font-weight="700">North Beach</text>
+</g>
+<g font-family="Arial, Helvetica, sans-serif" fill="#4CB6B2">
+  <text x="100" y="65" font-size="13" font-weight="700" letter-spacing="2.3">PROPERTY SERVICES</text>
+</g>
+<path d="M98 72 H236" stroke="#E6D6B8" stroke-width="2"/>
+</svg>
