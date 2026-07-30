@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="View recent handyman and property repair work by North Beach Property Services." />
+  <title>Portfolio | North Beach Property Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="launch-banner">
+      <div class="container">North Beach Repair is currently preparing for launch. We look forward to serving the NH Seacoast in 2027.</div>
+    </div>
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="North Beach Property Services home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-name">North Beach</span>
+          <span class="brand-subtitle">Property Services</span>
+        </span>
+      </a>
+
+      <button class="menu-button" aria-label="Open navigation" aria-expanded="false">&#9776;</button>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a class="active" href="portfolio.html">Portfolio</a>
+        <a class="button button-small button-disabled" href="#" aria-disabled="true" data-launch-href="quote.html">Request a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Portfolio</p>
+        <h1>Before and after project examples.</h1>
+        <p>
+          A sample of the repair, painting, and punch-list work North Beach Property Services handles for local homes and rentals.
+        </p>
+      </div>
+    </section>
+
+    <section class="section portfolio-gallery-section">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow">Work examples</p>
+          <h2>Small repairs with a clean finished look</h2>
+          <p>These examples show typical before-and-after jobs for drywall, paint, trim, doors, and home repair punch lists.</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-card">
+            <div class="before-after" aria-label="Before and after drywall repair example">
+              <div class="project-photo">
+                <img src="assets/portfolio-drywall-before.png" alt="Damaged drywall before patching and paint touch-up">
+                <span>Before</span>
+              </div>
+              <div class="project-photo">
+                <img src="assets/portfolio-drywall-after.png" alt="Smooth repaired wall after drywall patching and paint blending">
+                <span>After</span>
+              </div>
+            </div>
+            <div class="portfolio-copy">
+              <p class="eyebrow">Drywall and paint</p>
+              <h3>Wall patch and paint blend</h3>
+              <p>Repaired damaged drywall, sanded the patch smooth, primed the area, and blended fresh paint into the surrounding wall.</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="before-after" aria-label="Before and after door and trim repair example">
+              <div class="project-photo">
+                <img src="assets/portfolio-door-before.png" alt="Misaligned interior door and worn trim before adjustment">
+                <span>Before</span>
+              </div>
+              <div class="project-photo">
+                <img src="assets/portfolio-door-after.png" alt="Aligned interior door and refreshed trim after repair">
+                <span>After</span>
+              </div>
+            </div>
+            <div class="portfolio-copy">
+              <p class="eyebrow">Door and trim</p>
+              <h3>Door alignment and trim refresh</h3>
+              <p>Adjusted a sticking interior door, tightened hardware, filled trim gaps, caulked seams, and touched up the finish paint.</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="before-after" aria-label="Before and after punch-list repair example">
+              <div class="project-photo">
+                <img src="assets/portfolio-turnover-before.png" alt="Rental turnover area with wall marks and small repair items before touch-ups">
+                <span>Before</span>
+              </div>
+              <div class="project-photo">
+                <img src="assets/portfolio-turnover-after.png" alt="Clean rental turnover area after wall, trim, and fixture touch-ups">
+                <span>After</span>
+              </div>
+            </div>
+            <div class="portfolio-copy">
+              <p class="eyebrow">Punch-list repairs</p>
+              <h3>Rental turnover touch-ups</h3>
+              <p>Completed small repairs across the unit, including wall marks, loose fixtures, cabinet hardware, and paint touch-ups before move-in.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand" aria-label="North Beach Property Services">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-name">North Beach</span>
+          <span class="brand-subtitle">Property Services</span>
+        </span>
+      </div>
+      <div><strong>Service Area</strong><p>Hampton, NH and Surrounding Seacoast Communities</p></div>
+      <div><strong>Contact</strong><p><a href="tel:+16035550123">(603) 555-0123</a><br><a href="mailto:info@northbeachrepair.com">info@northbeachrepair.com</a> (coming soon)</p></div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> North Beach Property Services</span>
+      <a href="index.html">Return to Home</a>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>
