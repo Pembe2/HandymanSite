@@ -1,5 +1,5 @@
 // Replace this address with the email address where quote requests should be sent.
-const BUSINESS_EMAIL = "markdpemberton@gmail.com";
+const BUSINESS_EMAIL = "NorthBeachPS.llc@gmail.com";
 
 const form = document.getElementById("quoteForm");
 const formMessage = document.getElementById("formMessage");
